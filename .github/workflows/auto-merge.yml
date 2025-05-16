@@ -19,6 +19,6 @@ jobs:
       - name: Enable auto-merge for PRs
         uses: peter-evans/enable-pull-request-automerge@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
           merge-method: squash
 
