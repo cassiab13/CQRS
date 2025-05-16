@@ -6,6 +6,7 @@ on:
 
 jobs:
   automerge:
+    if: contains(github.event.pull_request.labels.*.name, 'automerge')
     runs-on: ubuntu-latest
 
     permissions:
